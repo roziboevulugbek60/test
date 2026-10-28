@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Huquq Krossvordi</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<!-- BOSHLASH OYNASI -->
+
+<div id="startPage">
+
+
+<h1>⚖️ Huquq Krossvordi</h1>
+
+
+<div class="start-box">
+
+
+<h2>👤 Ism va familiya</h2>
+
+
+<input 
+type="text" 
+id="playerName"
+placeholder="Ism Familiya">
+
+
+<br><br>
+
+
+<button onclick="startGame()">
+
+▶️ Boshlash
+
+</button>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+<!-- O'YIN OYNASI -->
+
+<div id="gamePage" style="display:none;">
+
+
+
+<h1>🧩 Huquq Krossvordi</h1>
+
+
+
+<h2>
+⏱ Vaqt:
+<span id="timer">05:00</span>
+</h2>
+
+
+
+<button onclick="pauseGame()">
+⏸ Pauza
+</button>
+
+
+<button onclick="restartGame()">
+🔄 Qayta boshlash
+</button>
+
+
+
+
+
+<div class="main">
+
+
+
+
+
+<!-- CHAP TOMON KROSSVORD -->
+
+<div class="crossword">
+
+
+<h2>🧩 Javoblar</h2>
+
+
+
+<table>
+
+
+
+<tr>
+<td>1</td>
+<td>
+<input maxlength="1" data-answer="K">
+<input maxlength="1" data-answer="O">
+<input maxlength="1" data-answer="N">
+<input maxlength="1" data-answer="S">
+<input maxlength="1" data-answer="T">
+<input maxlength="1" data-answer="I">
+<input maxlength="1" data-answer="T">
+<input maxlength="1" data-answer="U">
+<input maxlength="1" data-answer="S">
+<input maxlength="1" data-answer="I">
+<input maxlength="1" data-answer="Y">
+<input maxlength="1" data-answer="A">
+</td>
+</tr>
+
+
+
+<tr>
+<td>2</td>
+<td>
+<input maxlength="1" data-answer="F">
+<input maxlength="1" data-answer="U">
+<input maxlength="1" data-answer="Q">
+<input maxlength="1" data-answer="A">
+<input maxlength="1" data-answer="R">
+<input maxlength="1" data-answer="O">
+</td>
+</tr>
+
+
+
+
+<tr>
+<td>3</td>
+<td>
+<input maxlength="1" data-answer="Q">
+<input maxlength="1" data-answer="O">
+<input maxlength="1" data-answer="N">
+<input maxlength="1" data-answer="U">
+<input maxlength="1" data-answer="N">
+</td>
+</tr>
+
+
+
+
+<tr>
+<td>4</td>
+<td>
+<input maxlength="1" data-answer="S">
+<input maxlength="1" data-answer="U">
+<input maxlength="1" data-answer="D">
+</td>
+</tr>
+
+
+
+
+<tr>
+<td>5</td>
+<td>
+<input maxlength="1" data-answer="H">
+<input maxlength="1" data-answer="U">
+<input maxlength="1" data-answer="Q">
+<input maxlength="1" data-answer="U">
+<input maxlength="1" data-answer="Q">
+</td>
+</tr>
+
+
+
+
+<tr>
+<td>6</td>
+<td>
+<input maxlength="1" data-answer="D">
+<input maxlength="1" data-answer="A">
+<input maxlength="1" data-answer="V">
+<input maxlength="1" data-answer="L">
+<input maxlength="1" data-answer="A">
+<input maxlength="1" data-answer="T">
+</td>
+</tr>
+
+
+
+
+<tr>
+<td>7</td>
+<td>
+<input maxlength="1" data-answer="J">
+<input maxlength="1" data-answer="I">
+<input maxlength="1" data-answer="N">
+<input maxlength="1" data-answer="O">
+<input maxlength="1" data-answer="Y">
+<input maxlength="1" data-answer="A">
+<input maxlength="1" data-answer="T">
+</td>
+</tr>
+
+
+
+
+<tr>
+<td>8</td>
+<td>
+<input maxlength="1" data-answer="J">
+<input maxlength="1" data-answer="A">
+<input maxlength="1" data-answer="Z">
+<input maxlength="1" data-answer="O">
+</td>
+</tr>
+
+
+
+
+<tr>
+<td>9</td>
+<td>
+<input maxlength="1" data-answer="T">
+<input maxlength="1" data-answer="A">
+<input maxlength="1" data-answer="R">
+<input maxlength="1" data-answer="T">
+<input maxlength="1" data-answer="I">
+<input maxlength="1" data-answer="B">
+</td>
+</tr>
+
+
+
+
+<tr>
+<td>10</td>
+<td>
+<input maxlength="1" data-answer="A">
+<input maxlength="1" data-answer="D">
+<input maxlength="1" data-answer="V">
+<input maxlength="1" data-answer="O">
+<input maxlength="1" data-answer="K">
+<input maxlength="1" data-answer="A">
+<input maxlength="1" data-answer="T">
+</td>
+</tr>
+
+
+
+
+<tr>
+<td>11</td>
+<td>
+<input maxlength="1" data-answer="K">
+<input maxlength="1" data-answer="O">
+<input maxlength="1" data-answer="D">
+<input maxlength="1" data-answer="E">
+<input maxlength="1" data-answer="K">
+<input maxlength="1" data-answer="S">
+</td>
+</tr>
+
+
+
+
+<tr>
+<td>12</td>
+<td>
+<input maxlength="1" data-answer="V">
+<input maxlength="1" data-answer="A">
+<input maxlength="1" data-answer="K">
+<input maxlength="1" data-answer="O">
+<input maxlength="1" data-answer="L">
+<input maxlength="1" data-answer="A">
+<input maxlength="1" data-answer="T">
+</td>
+</tr>
+
+
+
+</table>
+
+
+<br>
+
+
+<button onclick="check()">
+
+✅ Tekshirish
+
+</button>
+
+
+</div>
+
+
+
+
+
+
+
+<!-- O'NG TOMON SAVOLLAR -->
+
+<div class="questions">
+
+
+<h2>📚 Savollar</h2>
+
+
+<ol>
+
+
+<li>O‘zbekiston Respublikasining asosiy qonuni?</li>
+
+
+<li>Huquq va majburiyatlarga ega bo‘lgan shaxs?</li>
+
+
+<li>Davlat tomonidan o‘rnatilgan majburiy qoida?</li>
+
+
+<li>Adolatni amalga oshiruvchi davlat organi?</li>
+
+
+<li>Davlat tomonidan himoya qilinadigan qoidalar tizimi?</li>
+
+
+<li>Jamiyatni boshqaruvchi siyosiy-huquqiy tuzilma?</li>
+
+
+<li>Qonunga xilof xavfli harakat?</li>
+
+
+<li>Jinoyat uchun qo‘llaniladigan chora?</li>
+
+
+<li>Jamiyatdagi qoidalarga rioya qilish holati?</li>
+
+
+<li>Huquqiy yordam beruvchi mutaxassis?</li>
+
+
+<li>Qonunlarning tartibga solingan to‘plami?</li>
+
+
+<li>Biror ishni bajarish uchun berilgan huquq?</li>
+
+
+
+</ol>
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+<div id="result"></div>
+
+
+
+</div>
+
+
+
+
+
+<footer>
+
+Developer: Ulug‘bek.R
+
+</footer>
+
+
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,320 @@
+*{
+    box-sizing:border-box;
+}
+
+
+body{
+
+    margin:0;
+
+    padding:20px;
+
+    font-family:Arial, sans-serif;
+
+    background:#eef3f8;
+
+    text-align:center;
+
+}
+
+
+h1{
+
+    color:#17365d;
+
+    font-size:32px;
+
+}
+
+
+/* BOSHLASH OYNASI */
+
+.start-box{
+
+    width:420px;
+
+    margin:60px auto;
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    box-shadow:0 0 20px #aaa;
+
+}
+
+
+.start-box input{
+
+    width:330px;
+
+    height:45px;
+
+    padding:10px;
+
+    font-size:18px;
+
+    border-radius:10px;
+
+    border:2px solid #17365d;
+
+}
+
+
+
+/* TUGMALAR */
+
+button{
+
+    padding:12px 25px;
+
+    margin:5px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#17365d;
+
+    color:white;
+
+    font-size:17px;
+
+    cursor:pointer;
+
+}
+
+
+button:hover{
+
+    background:#28558c;
+
+}
+
+
+
+/* ASOSIY QISM */
+
+.main{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:flex-start;
+
+    gap:40px;
+
+    margin-top:30px;
+
+}
+
+
+
+/* KROSSVORD */
+
+.crossword{
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:15px;
+
+    box-shadow:0 0 15px #aaa;
+
+}
+
+
+
+.crossword h2{
+
+    color:#17365d;
+
+}
+
+
+
+table{
+
+    border-collapse:collapse;
+
+}
+
+
+
+td{
+
+    padding:5px;
+
+    font-weight:bold;
+
+    vertical-align:middle;
+
+}
+
+
+
+td:first-child{
+
+    font-size:18px;
+
+}
+
+
+
+td input{
+
+    width:38px;
+
+    height:38px;
+
+    text-align:center;
+
+    text-transform:uppercase;
+
+    font-size:20px;
+
+    font-weight:bold;
+
+    border:2px solid #17365d;
+
+    border-radius:5px;
+
+    margin:2px;
+
+}
+
+
+
+td input:focus{
+
+    outline:none;
+
+    background:#d9efff;
+
+}
+
+
+
+/* SAVOLLAR */
+
+.questions{
+
+    width:430px;
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:15px;
+
+    box-shadow:0 0 15px #aaa;
+
+    text-align:left;
+
+}
+
+
+
+.questions h2{
+
+    text-align:center;
+
+    color:#17365d;
+
+}
+
+
+
+.questions li{
+
+    margin-bottom:15px;
+
+    font-size:17px;
+
+}
+
+
+
+/* VAQT */
+
+#timer{
+
+    color:#d32f2f;
+
+    font-weight:bold;
+
+}
+
+
+
+/* NATIJA */
+
+.result-box{
+
+    width:350px;
+
+    margin:30px auto;
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:15px;
+
+    font-size:20px;
+
+    box-shadow:0 0 15px #aaa;
+
+}
+
+
+
+/* FOOTER */
+
+footer{
+
+    margin-top:40px;
+
+    color:#555;
+
+    font-size:18px;
+
+}
+
+
+
+/* TELEFON UCHUN */
+
+@media(max-width:1000px){
+
+
+.main{
+
+    flex-direction:column;
+
+    align-items:center;
+
+}
+
+
+.questions{
+
+    width:90%;
+
+}
+
+
+
+.start-box{
+
+    width:90%;
+
+}
+
+
+
+}
